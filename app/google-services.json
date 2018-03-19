@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "222811296387",
+    "firebase_url": "https://sharegenics.firebaseio.com",
+    "project_id": "sharegenics",
+    "storage_bucket": "sharegenics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222811296387:android:a59f1c1b6a33068b",
+        "android_client_info": {
+          "package_name": "com.example.itsurboy.sharegenics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222811296387-lufmubt93naa4af8leb7gecbnadcsau5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.itsurboy.sharegenics",
+            "certificate_hash": "4e084d2d7fff6b7e6b079fa2f80c776ab5330f7d"
+          }
+        },
+        {
+          "client_id": "222811296387-av20jskg88ipc34po7ktg004rl32vqj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC30kQ6RzdgbfA7m_ukwUoyvZo4NrWWfh0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222811296387-av20jskg88ipc34po7ktg004rl32vqj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

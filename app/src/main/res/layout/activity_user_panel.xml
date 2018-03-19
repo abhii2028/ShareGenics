@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_user_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.itsurboy.sharegenics.UserPanel">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@color/colorPrimary"
+        />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginTop="50dp">
+        <EditText
+            android:id="@+id/emailetu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID.."
+            android:textAlignment="center"
+            android:inputType="text"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp">
+        <EditText
+            android:id="@+id/passwordetu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password.."
+            android:textAlignment="center"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:background="@color/colorPrimary"
+        android:text="Login"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="10sp"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/View"
+            android:background="@color/colorPrimary"
+            android:layout_marginRight="200dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="OR"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/textview"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/View2"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="20dp"
+            />
+
+    </RelativeLayout>
+
+
+   <android.support.v7.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="100dp"
+       android:layout_marginRight="100dp"
+       android:layout_marginTop="20dp"
+       app:cardCornerRadius="10dp"
+       android:elevation="10sp"
+       android:id="@+id/googlecard">
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/google"
+           android:layout_gravity="center"
+           />
+   </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sign"
+        android:text="Need an ACC. Sign Up Here..!"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:paddingTop="20dp"/>
+</LinearLayout>
