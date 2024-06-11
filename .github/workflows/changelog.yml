@@ -1,0 +1,36 @@
+name: Generate Changelog
+
+on:
+  push:
+    tags:
+      - '*'  # Trigger this workflow on every new tag
+
+jobs:
+  generate-changelog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'  # Specify the Ruby version you need
+
+      - name: Install github_changelog_generator
+        run: gem install github_changelog_generator
+
+      - name: Generate CHANGELOG.md
+        run: |
+          github_changelog_generator -u Roambee -p rb-android-maab
+      
+      - name: Commit and push changelog
+        run: |
+          git config --global user.name 'abhii2028'
+          git config --global user.email 'abhijeetprusty28@gmail.com'
+          git add CHANGELOG.md
+          git commit -m 'Update CHANGELOG.md'
+          git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
